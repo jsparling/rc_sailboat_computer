@@ -1,8 +1,8 @@
 /*
- * A simple example program that will send text every second. 
+ * A simple example program that will send text every second.
  * I use this to make sure my Fio and XBee are working appropriately.
- * 
- * I hook another XBee up to my computer with an breakout board and 
+ *
+ * I hook another XBee up to my computer with an breakout board and
  * use CoolTerm to display the messages.
  */
 
@@ -13,6 +13,8 @@ void setup() {
 void loop() {
   Serial.print("Fio is working");
   Serial.write(10); //ascii line feed
+
+  // wait 1 second then loop again
   delay(1000);
 }
 
